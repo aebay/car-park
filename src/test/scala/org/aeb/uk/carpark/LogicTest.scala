@@ -16,6 +16,10 @@ class LogicTest extends FlatSpec {
 
   it should "be empty after the last car departs" is pending
 
+  it should "remove the most recently parked cars if the capacity is reduced below the number of cars present" is pending
+
+  it should "contain the same cars in the order they were parked if the capacity is increased" is pending
+
   it should "return the car with the smallest registration number" is pending
 
 }
