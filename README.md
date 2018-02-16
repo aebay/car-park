@@ -17,3 +17,7 @@ Library for controlling traffic flow in a car park.
 ### Extra:
 
 - RESIZE: change the capacity of the existing car park.
+
+## Notes:
+
+It does not stop cars with identical registrations from being parked (the car park owners don't care if the population is using cloned plates...)
