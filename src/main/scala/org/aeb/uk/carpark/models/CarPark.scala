@@ -29,8 +29,8 @@ class CarPark( private var capacity: Int = 0 ) extends Logging {
   def resize( capacity: Int ): Unit = {
 
     this.capacity = capacity
-
-    // resize stack to new capacity, ensure most recent most recent parked cars are dropped if shrinking capacity
+    if ( capacity < occupants.length )
+      occupants.slice( occupants.length - capacity, occupants.length )
 
   }
 
