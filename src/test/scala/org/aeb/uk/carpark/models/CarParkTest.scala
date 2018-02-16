@@ -25,6 +25,17 @@ class CarParkTest extends FlatSpec {
 
   }
 
+  it should "not park a car with an invalid registration" in {
+
+    val carPark = new CarPark( 10 )
+    carPark.park( "ABCD" )
+    carPark.park( "12345" )
+    carPark.park( "123" )
+
+    assert( carPark.occupancy.isEmpty )
+
+  }
+
   it should "park a new car in the first empty slot in an occupied car park" in {
 
     val carPark = new CarPark( 10 )
