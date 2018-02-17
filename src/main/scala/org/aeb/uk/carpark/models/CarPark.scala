@@ -6,7 +6,7 @@ import scala.collection.mutable
 
 class CarPark( private var capacity: Int = 0 ) extends Logging {
 
-  // could be a val, but would require resize to pop each element which might be inefficient for large arrays
+  // could be a val, but would require resize() to pop each element which might be inefficient for large arrays
   private var occupants = mutable.ArrayStack[String]()
 
   def park( registration: String ): Unit = {
